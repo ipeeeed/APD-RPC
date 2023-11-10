@@ -44,9 +44,9 @@ public class ClienteRPC {
     }
 
     //Desenvolver a implementação
-    public double calcularAreaQuadrada(int x) throws Exception {
+    public int calcularAreaQuadrada(int x) throws Exception {
         Object[] parametros = new Object[]{Integer.valueOf(x)};
-        Double resultado = (Double) cliente.execute("Calc.areaQuadrado", parametros);
+        Integer resultado = (Integer) cliente.execute("Calc.areaQuadrado", parametros);
         return resultado;
     }
 
@@ -86,15 +86,15 @@ public class ClienteRPC {
         return resultado;
     }
 
-    public double calcularAreaSuperficieCubo(int x) throws Exception {
+    public int calcularAreaSuperficieCubo(int x) throws Exception {
         Object[] parametros = new Object[]{Integer.valueOf(x)};
-        Double resultado = (Double) cliente.execute("Calc.areaSuperficieCubo", parametros);
+        Integer resultado = (Integer) cliente.execute("Calc.areaSuperficieCubo", parametros);
         return resultado;
     }
 
-    public double calcularVolumeCubo(int x) throws Exception {
+    public int calcularVolumeCubo(int x) throws Exception {
         Object[] parametros = new Object[]{Integer.valueOf(x)};
-        Double resultado = (Double) cliente.execute("Calc.volumeCubo", parametros);
+        Integer resultado = (Integer) cliente.execute("Calc.volumeCubo", parametros);
         return resultado;
     }
 }

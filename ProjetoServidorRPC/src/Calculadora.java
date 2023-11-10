@@ -17,24 +17,31 @@ public class Calculadora {
         return x / y;
     }
 
-    //Desenvolver os cálculos
-    public double areaQuadrado(int x) {
-        double A = x * x; //Fórmula: A=a^2
+    // Desenvolver os cálculos
+    public int areaQuadrado(int x) {
+        int A = x * x; // Fórmula: A=a^2
         return A;
     }
 
     public double areaTrianguloRetangulo(int x, int y) {
-        return (x * y ) / 2; //Fórmula: A=b.h/2
+        return (x * y ) / 2;
+        // Fórmula: A=b.h/2
+        // Sendo b = base
+        // h = altura
     }
 
     public double areaCircunferencia(int x) {
-        double A = pi * (x * x); //Fórmula: A=(pi)r^2
+        double A = pi * (x * x);
         return A;
+        // Fórmula: A=(pi)r^2
+        // pi = 3.14
+        // sendo r = raio
     }
 
     public double areaEsfera(int x) {
-        double A = 4 * pi * (x * x); //Fórmula: A=4(pi)r^2
+        double A = 4 * pi * (x * x);
         return A;
+        // Fórmula: A=4(pi)r^2
     }
 
     public double volumeEsfera(int x) {
@@ -43,22 +50,22 @@ public class Calculadora {
     }
 
     public double areaCilindro(int x, int y) {
-        double A = 2 * pi * x * (x + y); //Fórmula: A=2(pi)r(r+h)
+        double A = 2 * pi * x * (x + y); // Fórmula: A=2(pi)r(r+h)
         return A;
     }
 
     public double volumeCilindro(int x, int y) {
-        double V = pi * (x * x) * y; //Fórmula: V=(pi)r^2h
+        double V = pi * (x * x) * y; // Fórmula: V=(pi)r^2h
         return V;
     }
 
-    public double areaSuperficieCubo(int x) {
-        double A = 6 * (x * x); //Fórmula: A=6a^2
+    public int areaSuperficieCubo(int x) {
+        int A = 6 * (x * x); // Fórmula: A=6a^2
         return A;
     }
 
-    public double volumeCubo(int x) {
-        double V = x * x * x; //Fórmula: V=a^3
+    public int volumeCubo(int x) {
+        int V = x * x * x; // Fórmula: V=a^3
         return V;
     }
 }
