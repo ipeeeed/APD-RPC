@@ -6,7 +6,7 @@ public class App {
         String urlServ = "http://localhost:8185"; 
         ClienteRPC rpc = new ClienteRPC(urlServ);
         Scanner sc = new Scanner(System.in);
-        int opcao = 99;
+        int opcao = 999;
 
         //Desenvolver  o menu
         System.out.println("\nBem vindo(a)!\n");

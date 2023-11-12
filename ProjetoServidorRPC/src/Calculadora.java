@@ -1,5 +1,5 @@
 public class Calculadora {
-    public double pi = 3.14;
+    private double pi = 3.14;
 
     public int adicao(int x, int y) {
         return x + y;
